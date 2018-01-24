@@ -1,0 +1,29 @@
+# "This \n escape sequence
+printf "Enter the username:"
+read name
+printf "Hi $name \n This $name is not the end\n\n\n"
+
+
+
+echo "This \rsequence tell not take before this \r as a valid statment"
+printf "Hi $name \r This $name is not the end\n\n\n\n"
+
+
+
+echo "This tab \t space sequence"
+
+printf "Hi $name \t This $name is not the end\n\n\n\n"
+
+
+
+echo "This 2 \t\t tab space sequence"
+printf "Hi $name \t\t This $name is not the end\n\n\n\n"
+
+
+
+echo "This  \e sequence divide the letter ascII symbol"
+printf "Hi $name \e $name This is not the end \n\n" 
+
+echo "\b sequence it shows output by deleting no \b in backspace"
+printf "Hi \b\b\b $name.This $name is not the end\n"
+printf "Hi \b\b $name.This $name is not the end\n"

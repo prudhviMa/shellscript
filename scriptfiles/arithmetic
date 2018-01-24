@@ -1,0 +1,30 @@
+echo a=30 b=15 arithmatic operaton here expe works only on integer
+a=30 b=15
+echo `expr $a + $b`
+echo `expr $a - $b`
+echo `expr $a \* $b`
+echo `expr $a / $b`
+echo `expr $a % $b`
+printf "\n\n"
+
+
+echo "a=37 b=15 % give the value of remainder" 
+a=37 b=15
+echo `expr $a + $b`
+echo `expr $a - $b`
+echo `expr $a \* $b`
+echo `expr $a / $b`
+echo `expr $a % $b`
+printf "\n\n"
+
+
+echo "a=10.5 b=3.5 % give the value of remainder"
+a=10.5 b=3.5
+c=`echo $a + $b|bc`
+d=`echo $a - $b|bc`
+e=`echo $a \*$b|bc`
+f=`echo $a / $b|bc`
+g=`echo $a % $b|bc`
+echo $c $d $e $f $g
+printf "\n\n"
+

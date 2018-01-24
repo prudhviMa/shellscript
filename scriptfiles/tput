@@ -1,0 +1,13 @@
+tput clear
+printf "total number of rows on screen="
+tput lines
+printf "total number of columns on screen="
+tput cols
+
+tput cup 15 20
+tput bold
+echo "this should be in bold"
+
+printf "\033[0m bye bye"
+
+

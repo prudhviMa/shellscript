@@ -1,0 +1,13 @@
+echo "enter the file name"
+read a
+char=
+
+cat $a | wc -m
+
+cat $a | wc -l
+
+cat $a | grep -o "[aeiouAEIOU]" | wc -l
+
+cat $a | grep -o "  " | wc -l
+
+
